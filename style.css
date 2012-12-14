@@ -16,8 +16,21 @@ Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, ri
 header {
 	padding:20px;
 	border:1px solid #bbb;
-	background-image:-webkit-gradient(linear,0% 0%,0% 100%,from(#fff),to(#ddd));
-	}
+	background-image:-webkit-gradient(linear,0% 0%,0% 100%,from(#666),to(#aaa));
+	color:red;
+}
+header h1 a {
+	-webkit-transition:-webkit-transform 0.5s;
+	transition:transform 0.5s;
+	display:inline-block;
+	color:#E0321B;
+	line-height:120px;
+}
+header h1 a:hover {
+	-webkit-transform:rotate(360deg);
+	text-decoration:none;
+	color:#FA6D5A;
+}
 	
 nav {
 	background-color:#222;
@@ -43,6 +56,19 @@ nav ul li a:hover {
 	color:black;
 }
 
+.search-results ul li a{
+	font-size:30px;
+	color:#666;
+	line-height:30px;
+}
+.meta {
+	color:#777;
+	margin:6px 0px;
+}
+.meta span {
+	margin-right:26px;
+}
+/* CMS STYLES*/
 .alignright {
 	float:right;
 	margin:0px 0px 8px 8px;
@@ -52,3 +78,8 @@ nav ul li a:hover {
 	float:left;
 	margin:0px 0px 8px 8px;
 }
+.story-content p img {
+	-webkit-transition:-webkit-transform 0.5s;
+}
+
+	
