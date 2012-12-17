@@ -68,6 +68,15 @@ nav ul li a:hover {
 .meta span {
 	margin-right:26px;
 }
+#main .row .span9 {
+	-webkit-transition:background-color 0.5s;
+}
+.highlight {
+	background-color:#EDE8B2;
+}
+.deleting{
+	
+}
 /* CMS STYLES*/
 .alignright {
 	float:right;
