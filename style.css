@@ -8,16 +8,24 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
 */
-
+body {
+	background-color:black;
+}
 #wrapper{
 	width:940px;
 	margin:0px auto;
+	background-color:#666;
+	color:yellow;
 }
 header {
 	padding:20px;
 	border:1px solid #bbb;
 	background-image:-webkit-gradient(linear,0% 0%,0% 100%,from(#666),to(#aaa));
 	color:red;
+}
+header h1 {
+	font-size:;
+	line-height:;
 }
 header h1 a {
 	-webkit-transition:-webkit-transform 0.5s;
@@ -40,7 +48,9 @@ nav ul {
 	list-style:none;
 	overflow:auto;
 }
-
+nav.affix {
+	margin-top:
+}
 nav ul li {
 	float:left;
 }
@@ -58,11 +68,11 @@ nav ul li a:hover {
 
 .search-results ul li a{
 	font-size:30px;
-	color:#666;
+	color:#000;
 	line-height:30px;
 }
 .meta {
-	color:#777;
+	color:#000;
 	margin:6px 0px;
 }
 .meta span {
@@ -89,6 +99,27 @@ nav ul li a:hover {
 }
 .story-content p img {
 	-webkit-transition:-webkit-transform 0.5s;
+} 
+#main img {
+	margin-right:10px;
 }
-
-	
+@media (max-width: 480px){
+	body {
+		background-image:none;
+		padding:0px;
+	}
+	#wrapper {
+	width:100%;
+	}
+	#main img {
+	float:none;
+	width:100% !important;
+	}
+	header h1 {
+	font-size:30px;
+	line-height:30px;
+	}
+	header h1 a {
+	line-height:;
+	}
+}
