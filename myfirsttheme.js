@@ -11,9 +11,12 @@ $(function(){
 //			4(this).removeClass('highlight');
 //		}
 		
-	);
+//	);
 	$('#primary-nav').attr('data-spy','affix');
 	$('#primary-nav').attr('data-offset-top','220');
+	
+	// Auto-hide alerts
+	$('.alert').delay(2000).fadeOut();
 	
 	// Capture double-click of post 
 //	$('p').dblclick(function(){
@@ -31,4 +34,4 @@ $(function(){
 //			break;
 //		}
 //	});
-	
+});

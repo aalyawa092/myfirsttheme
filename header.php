@@ -6,7 +6,7 @@
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri()?>/myfirsttheme.js"></script>
 
-<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri()?>/bootstrap/js/bootstrap.min.js"></script>
 
 
 <title><?php bloginfo('name')?></title>
